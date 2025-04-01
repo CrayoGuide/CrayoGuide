@@ -122,19 +122,28 @@
         }
 
         ol, ul {
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 35px;
+            margin: 35px auto;
+            padding: 0;
             list-style-position: inside;
-            text-align: center; /* Center list items */
-            max-width: 600px; /* Limit width */
+            text-align: center;
+            max-width: 600px;
         }
 
         li {
+            text-align: left;
             font-size: 1.15em;
             margin-bottom: 20px;
             color: #484643;
             line-height: 1.8;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        li::marker {
+            text-align: left;
+            width: 20px;
+            display: inline-block;
         }
 
         strong {
