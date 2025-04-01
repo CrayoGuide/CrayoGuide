@@ -325,6 +325,9 @@
             text-align: center;
             max-width: 90%;
             width: 500px;
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center items horizontally */
         }
 
         #popup h2 {
@@ -369,8 +372,8 @@
         }
 
         #popup span {
-            margin: 0 10px;
-            display: inline-block;
+            margin: 10px 0; /* Adjust vertical margins */
+            display: block; /* Stack on a new line */
             color: var(--color-text-medium);
         }
 
@@ -604,7 +607,7 @@
                 <li><strong>Leverage Templates:</strong> <span>Streamline workflow and maintain brand aesthetic.</span></li>
                 <li><strong>Customize Voiceovers:</strong> <span>Fine-tune parameters for a unique audio experience.</span></li>
                 <li><strong>Optimize for Platforms:</strong> <span>Tailor videos considering aspect ratios and formats.</span></li>
-                <li><strong>Stay Updated:<span>Keep up with the latest AI trends and features.</span></li>
+                <li><strong>Stay Updated:</strong> <span>Keep up with the latest AI trends and features.</span></li>
             </ul>
         </section>
 
