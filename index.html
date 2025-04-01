@@ -379,6 +379,44 @@
             color: var(--color-text-medium);
         }
 
+        /* Table of Contents Styles */
+        #toc {
+            background-color: var(--color-background-section-alt);
+            border-radius: var(--border-radius-medium);
+            box-shadow: var(--box-shadow-light);
+            padding: 20px;
+            margin-bottom: 30px;
+            border: 1px solid var(--color-border-light);
+        }
+
+        #toc h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--color-border-light);
+            padding-bottom: 10px;
+        }
+
+        #toc ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        #toc li {
+            margin-bottom: 10px;
+        }
+
+        #toc a {
+            text-decoration: none;
+            color: var(--color-text-medium);
+            font-weight: 500;
+        }
+
+        #toc a:hover {
+            text-decoration: underline;
+            color: var(--color-brand-blue);
+        }
+
         @media (max-width: 768px) {
             .container {
                 max-width: 100%;
@@ -512,6 +550,18 @@
     </header>
 
     <main class="container">
+        <section id="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#features">Crayo.ai Features Overview</a></li>
+                <li><a href="#evolution">The Evolution of Video Creation and the Rise of AI</a></li>
+                <li><a href="#why-ai">Why AI Video Automation is Essential</a></li>
+                <li><a href="#how-to">How to Leverage Crayo.ai Features</a></li>
+                <li><a href="#tips">Tips for Optimizing Your Video Strategy with Crayo.ai</a></li>
+                <li><a href="#cta-final">The Future of Video Content is Here</a></li>
+            </ul>
+        </section>
+
         <section id="features">
             <h2><strong><a href="https://crayo.ai/?ref=Guide" class="crayo-link">Crayo.ai</a></strong> Features Overview</h2>
             <p>Explore the powerful features of <strong><a href="https://crayo.ai/?ref=Guide" class="crayo-link">Crayo.ai</a></strong> to enhance your video creation process:</p>
