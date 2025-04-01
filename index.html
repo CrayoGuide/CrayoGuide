@@ -38,10 +38,23 @@
             line-height: 1.8;
         }
 
-        section {
-            padding: 60px 20px;
-            max-width: 1000px;
+        .container {
+            display: flex;
+            max-width: 1200px;
             margin: 20px auto;
+        }
+
+        .sidebar {
+            width: 200px;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        section {
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -78,13 +91,13 @@
         }
 
         .ad-placeholder {
-            width: 336px;
+            width: 100%; /* Ensure ads fill the sidebar */
             height: 280px;
             background-color: #f0f0f0;
-            margin: 40px auto;
+            margin-bottom: 20px;
             text-align: center;
             border-radius: 8px;
-            overflow: hidden; /* Prevent potential overflow */
+            overflow: hidden;
         }
 
         img {
@@ -108,6 +121,16 @@
         strong {
             font-weight: 600;
         }
+
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+        }
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N42YRGLVF6"></script>
     <script>
@@ -126,106 +149,160 @@
         <p>Experience the pinnacle of AI-driven video automation. Create stunning, professional-grade short-form videos effortlessly.</p>
     </header>
 
-    <section>
-        <h2>The Future of Premium Video Creation</h2>
-        <p>Step into a new era of video content production. Crayo.ai delivers advanced AI automation, allowing you to craft high-quality, engaging videos that resonate with your audience. Discover the power of premium video creation, streamlined for maximum impact.</p>
-        <img src="https://www.crayo.ai/images/hero-video.webp" alt="Premium AI Video Interface" onerror="this.onerror=null;this.src='https://via.placeholder.com/800x400?text=Crayo.ai+Premium+View';">
-        <p><a href="https://crayo.ai/?ref=GUIDE" class="button">Begin Your Premium Video Journey</a></p>
-
-        <div class="ad-placeholder">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-6984817249094958"
-                 data-ad-slot="YOUR_AD_SLOT_ID"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+    <div class="container">
+        <div class="sidebar">
+            <div class="ad-placeholder">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-6984817249094958"
+                     data-ad-slot="YOUR_AD_SLOT_ID_LEFT"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            <div class="ad-placeholder">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-6984817249094958"
+                     data-ad-slot="YOUR_AD_SLOT_ID_LEFT_2"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
         </div>
 
-        <h2>Seamlessly Automate Your Video Workflow</h2>
-        <p>Transform your content strategy with Crayo.ai's intuitive automation tools. Start creating professional videos with unparalleled ease.</p>
-        <p><a href="https://crayo.ai/?ref=GUIDE" class="button">Unlock Advanced Video Automation</a></p>
+        <div class="content">
+            <section>
+                <h2>The Future of Premium Video Creation</h2>
+                <p>Step into a new era of video content production. Crayo.ai delivers advanced AI automation, allowing you to craft high-quality, engaging videos that resonate with your audience. Discover the power of premium video creation, streamlined for maximum impact.</p>
+                <img src="./images/hero-video.webp" alt="Premium AI Video Interface">
+                <p><a href="https://crayo.ai/?ref=GUIDE" class="button">Begin Your Premium Video Journey</a></p>
 
-        <h2>Craft Professional Voiceovers with AI Precision</h2>
-        <p>Achieve studio-quality voiceovers without the studio. Crayo.ai's AI voiceover technology delivers crystal-clear audio, tailored to your video content.</p>
-        <img src="https://www.crayo.ai/images/ai-voiceover.webp" alt="Professional AI Voiceovers" onerror="this.onerror=null;this.src='https://via.placeholder.com/800x400?text=Premium+Voiceovers';">
-        <ol>
-            <li><strong>Access the AI Voiceover Suite:</strong> Navigate to the professional voiceover tools.</li>
-            <li><strong>Input Your Script:</strong> Paste or type your script for seamless integration.</li>
-            <li><strong>Select Premium Voice Styles:</strong> Choose from a curated selection of high-end AI voices.</li>
-            <li><strong>Generate and Integrate:</strong> Produce and seamlessly integrate your professional voiceover.</li>
-        </ol>
-        <p>Elevate your video's auditory experience with AI precision.</p>
+                <div class="ad-placeholder">
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-6984817249094958"
+                         data-ad-slot="YOUR_AD_SLOT_ID_1"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
 
-        <h2>Transform Text into High-Impact Visuals</h2>
-        <p>Create visually compelling videos from text with Crayo.ai's advanced text-to-image feature. Design stunning visuals that capture and engage your audience.</p>
-        <img src="https://www.crayo.ai/images/text-to-video.webp" alt="High-Impact Visual Generation" onerror="this.onerror=null;this.src='https://via.placeholder.com/800x400?text=Premium+Visuals';">
-        <ol>
-            <li><strong>Open the Visual Design Suite:</strong> Access the text-to-image tools.</li>
-            <li><strong>Input Your Text:</strong> Input your text for visual transformation.</li>
-            <li><strong>Select Premium Design Templates:</strong> Choose from a range of high-end templates.</li>
-            <li><strong>Generate Stunning Visuals:</strong> Create and integrate your visuals seamlessly.</li>
-        </ol>
+                <h2>Seamlessly Automate Your Video Workflow</h2>
+                <p>Transform your content strategy with Crayo.ai's intuitive automation tools. Start creating professional videos with unparalleled ease.</p>
+                <p><a href="https://crayo.ai/?ref=GUIDE" class="button">Unlock Advanced Video Automation</a></p>
 
-        <div class="ad-placeholder">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-6984817249094958"
-                 data-ad-slot="YOUR_AD_SLOT_ID"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+                <h2>Craft Professional Voiceovers with AI Precision</h2>
+                <p>Achieve studio-quality voiceovers without the studio. Crayo.ai's AI voiceover technology delivers crystal-clear audio, tailored to your video content.</p>
+                <img src="./images/ai-voiceover.webp" alt="Professional AI Voiceovers">
+                <ol>
+                    <li><strong>Access the AI Voiceover Suite:</strong> Navigate to the professional voiceover tools.</li>
+                    <li><strong>Input Your Script:</strong> Paste or type your script for seamless integration.</li>
+                    <li><strong>Select Premium Voice Styles:</strong> Choose from a curated selection of high-end AI voices.</li>
+                    <li><strong>Generate and Integrate:</strong> Produce and seamlessly integrate your professional voiceover.</li>
+                </ol>
+                <p>Elevate your video's auditory experience with AI precision.</p>
+
+                <h2>Transform Text into High-Impact Visuals</h2>
+                <p>Create visually compelling videos from text with Crayo.ai's advanced text-to-image feature. Design stunning visuals that capture and engage your audience.</p>
+                <img src="./images/text-to-video.webp" alt="High-Impact Visual Generation">
+                <ol>
+                    <li><strong>Open the Visual Design Suite:</strong> Access the text-to-image tools.</li>
+                    <li><strong>Input Your Text:</strong> Input your text for visual transformation.</li>
+                    <li><strong>Select Premium Design Templates:</strong> Choose from a range of high-end templates.</li>
+                    <li><strong>Generate Stunning Visuals:</strong> Create and integrate your visuals seamlessly.</li>
+                </ol>
+
+                <div class="ad-placeholder">
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-6984817249094958"
+                         data-ad-slot="YOUR_AD_SLOT_ID_2"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <h2>Automate Content Repurposing with Precision</h2>
+                <p>Maximize your content's reach by repurposing clips from top platforms. Crayo.ai's automation tools ensure high-quality conversions.</p>
+                <img src="./images/repurpose-content.webp" alt="Precision Content Repurposing">
+                <ol>
+                    <li><strong>Use Professional Repurposing Tools:</strong> Access the advanced repurposing features.</li>
+                    <li><strong>Provide Source URLs:</strong> Input your source media links.</li>
+                    <li><strong>Customize with Precision:</strong> Adjust settings for optimal output.</li>
+                    <li><strong>Deliver High-Quality Repurposed Content:</strong> Download and distribute your content.</li>
+                </ol>
+
+                <h2>Advanced AI Scripting for Professional Videos</h2>
+                <p>Generate high-quality video scripts effortlessly with Crayo.ai's AI scripting tool. Create compelling narratives for your professional videos.</p>
+                <img src="./images/ai-scripting.webp" alt="Professional AI Scripting">
+                <ol>
+                    <li><strong>Access Advanced Scripting Tools:</strong> Open the AI scripting suite.</li>
+                    <li><strong>Input Detailed Prompts:</strong> Input precise instructions.</li>
+                    <li><strong>Generate Professional Scripts:</strong> Create high-quality scripts.</li>
+                    <li><strong>Refine and Integrate:</strong> Adjust and integrate your scripts.</li>
+                </ol>
+
+                <div class="ad-placeholder">
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-6984817249094958"
+                         data-ad-slot="YOUR_AD_SLOT_ID_3"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <h2>Optimize Your Video Strategy with Crayo.ai</h2>
+                <p>Elevate your video content with these professional tips for Crayo.ai:</p>
+                <ul>
+                    <li><strong>Use High-Resolution Sources:</strong> Ensure your inputs are of premium quality.</li>
+                    <li><strong>Experiment with Advanced AI Styles:</strong> Explore the full range of creative options.</li>
+                    <li><strong>Craft Engaging, Concise Videos:</strong> Focus on impactful short-form content.</li>
+                    <li><strong>Add Professional Subtitles:</strong> Enhance accessibility and engagement.</li>
+                </ul>
+
+                <h2>Step into the Future of Premium Video Creation</h2>
+                <p>Transform your video content with Crayo.ai's advanced automation. Experience the difference of professional-grade video creation.</p>
+                <p><a href="https://crayo.ai/?ref=GUIDE" class="button">Experience Premium AI Video Now</a></p>
+            </section>
         </div>
 
-        <h2>Automate Content Repurposing with Precision</h2>
-        <p>Maximize your content's reach by repurposing clips from top platforms. Crayo.ai's automation tools ensure high-quality conversions.</p>
-        <img src="https://www.crayo.ai/images/repurpose-content.webp" alt="Precision Content Repurposing" onerror="this.onerror=null;this.src='https://via.placeholder.com/800x400?text=Precision+Repurposing';">
-        <ol>
-            <li><strong>Use Professional Repurposing Tools:</strong> Access the advanced repurposing features.</li>
-            <li><strong>Provide Source URLs:</strong> Input your source media links.</li>
-            <li><strong>Customize with Precision:</strong> Adjust settings for optimal output.</li>
-            <li><strong>Deliver High-Quality Repurposed Content:</strong> Download and distribute your content.</li>
-        </ol>
-
-        <h2>Advanced AI Scripting for Professional Videos</h2>
-        <p>Generate high-quality video scripts effortlessly with Crayo.ai's AI scripting tool. Create compelling narratives for your professional videos.</p>
-        <img src="https://www.crayo.ai/images/ai-scripting.webp" alt="Professional AI Scripting" onerror="this.onerror=null;this.src='https://via.placeholder.com/800x400?text=Advanced+Scripting';">
-        <ol>
-            <li><strong>Access Advanced Scripting Tools:</strong> Open the AI scripting suite.</li>
-            <li><strong>Input Detailed Prompts:</strong> Input precise instructions.</li>
-            <li><strong>Generate Professional Scripts:</strong> Create high-quality scripts.</li>
-            <li><strong>Refine and Integrate:</strong> Adjust and integrate your scripts.</li>
-        </ol>
-
-        <div class="ad-placeholder">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-6984817249094958"
-                 data-ad-slot="YOUR_AD_SLOT_ID"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+        <div class="sidebar">
+            <div class="ad-placeholder">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-6984817249094958"
+                     data-ad-slot="YOUR_AD_SLOT_ID_RIGHT"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+             <div class="ad-placeholder">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-6984817249094958"
+                     data-ad-slot="YOUR_AD_SLOT_ID_RIGHT_2"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
         </div>
-
-        <h2>Optimize Your Video Strategy with Crayo.ai</h2>
-        <p>Elevate your video content with these professional tips for Crayo.ai:</p>
-        <ul>
-            <li><strong>Use High-Resolution Sources:</strong> Ensure your inputs are of premium quality.</li>
-            <li><strong>Experiment with Advanced AI Styles:</strong> Explore the full range of creative options.</li>
-            <li><strong>Craft Engaging, Concise Videos:</strong> Focus on impactful short-form content.</li>
-            <li><strong>Add Professional Subtitles:</strong> Enhance accessibility and engagement.</li>
-        </ul>
-
-        <h2>Step into the Future of Premium Video Creation</h2>
-        <p>Transform your video content with Crayo.ai's advanced automation. Experience the difference of professional-grade video creation.</p>
-        <p><a href="https://crayo.ai/?ref=GUIDE" class="button">Experience Premium AI Video Now</a></p>
-    </section>
+    </div>
 
 </body>
 </html>
