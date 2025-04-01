@@ -21,14 +21,14 @@
             font-family: 'Nunito Sans', sans-serif;
             margin: 0;
             padding: 0;
-            color: #c7c2ba;
+            color: #000;
             background-color: #1d1d1c;
             line-height: 1.7;
         }
 
         header {
             background: linear-gradient(135deg, #484643, #726f6b);
-            color: #f2ebe2;
+            color: #fff;
             padding: 50px 30px;
             text-align: center;
             margin: 20px auto;
@@ -91,7 +91,7 @@
         p {
             font-size: 1.15em;
             margin-bottom: 35px;
-            color: #484643;
+            color: #000;
             line-height: 1.8;
         }
 
@@ -99,7 +99,7 @@
             display: inline-block;
             padding: 20px 45px;
             background: linear-gradient(135deg, #726f6b, #484643);
-            color: #f2ebe2;
+            color: #fff;
             text-decoration: none;
             border-radius: 10px;
             margin-top: 40px;
@@ -121,6 +121,38 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
         }
 
+        ul.features-list {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            max-width: 800px;
+            margin: 35px auto;
+        }
+
+        ul.features-list li {
+            display: contents;
+        }
+
+        ul.features-list li strong {
+            text-align: left;
+            font-weight: 600;
+            color: #726f6b;
+            grid-column: 1;
+            align-self: start;
+        }
+
+        ul.features-list li span {
+            text-align: left;
+            grid-column: 2;
+            align-self: start;
+        }
+
+        ul.features-list li:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
         ol, ul {
             margin: 35px auto;
             padding: 0;
@@ -133,7 +165,7 @@
             text-align: left;
             font-size: 1.15em;
             margin-bottom: 20px;
-            color: #484643;
+            color: #000;
             line-height: 1.8;
             display: flex;
             justify-content: center;
@@ -183,7 +215,7 @@
         #popup button {
             padding: 15px 30px;
             background: linear-gradient(135deg, #726f6b, #484643);
-            color: #f2ebe2;
+            color: #fff;
             border: none;
             border-radius: 8px;
             cursor: pointer;
@@ -280,18 +312,17 @@
             <p>Explore the powerful features of <strong><a href="https://crayo.ai/?ref=Guide">Crayo.ai</a></strong> to enhance your video creation process:</p>
             <img src="./images/crayo-features.png" alt="Crayo.ai Features Screenshot">
             <p><strong><a href="https://crayo.ai/?ref=Guide">Crayo.ai</a></strong> offers a comprehensive suite of AI-driven tools designed to streamline video production. From automated scripting and professional voiceovers to stunning visual generation and content repurposing, <strong><a href="https://crayo.ai/?ref=Guide">Crayo.ai</a></strong> empowers creators to produce high-quality videos efficiently.</p>
-            <p>Key features include:</p>
-            <ul>
-                <li><strong>AI-Powered Scripting:</strong> Generate compelling video scripts with AI assistance, tailored to your content needs.</li>
-                <li><strong>Professional AI Voiceovers:</strong> Access a range of high-quality AI voices to add professional narration to your videos.</li>
-                <li><strong>Text-to-Visuals:</strong> Transform text into engaging visuals, enhancing your video content with dynamic imagery.</li>
-                <li><strong>Automated Content Repurposing:</strong> Easily adapt and repurpose existing content for various platforms, saving time and effort.</li>
-                <li><strong>Customizable Templates:</strong> Utilize a library of premium templates to create visually appealing videos quickly.</li>
-                <li><strong>Analytics and Insights:</strong> Track video performance and gain insights to optimize your content strategy.</li>
-                <li><strong>Cloud-Based Collaboration:</strong> Seamlessly collaborate with team members on video projects in real-time.</li>
-                <li><strong>Multi-Language Support:</strong> Reach a global audience with AI-powered translation and voiceover capabilities.</li>
-                <li><strong>Advanced Editing Tools:</strong> Fine-tune your videos with precision editing features for professional results.</li>
-                <li><strong>API Integration:</strong> Integrate Crayo.ai with your existing workflows and platforms for enhanced automation.</li>
+            <ul class="features-list">
+                <li><strong>AI-Powered Scripting:</strong> <span>Generate compelling video scripts with AI assistance, tailored to your content needs.</span></li>
+                <li><strong>Professional AI Voiceovers:</strong> <span>Access a range of high-quality AI voices to add professional narration to your videos.</span></li>
+                <li><strong>Text-to-Visuals:</strong> <span>Transform text into engaging visuals, enhancing your video content with dynamic imagery.</span></li>
+                <li><strong>Automated Content Repurposing:</strong> <span>Easily adapt and repurpose existing content for various platforms, saving time and effort.</span></li>
+                <li><strong>Customizable Templates:</strong> <span>Utilize a library of premium templates to create visually appealing videos quickly.</span></li>
+                <li><strong>Analytics and Insights:</strong> <span>Track video performance and gain insights to optimize your content strategy.</span></li>
+                <li><strong>Cloud-Based Collaboration:</strong> <span>Seamlessly collaborate with team members on video projects in real-time.</span></li>
+                <li><strong>Multi-Language Support:</strong> <span>Reach a global audience with AI-powered translation and voiceover capabilities.</span></li>
+                <li><strong>Advanced Editing Tools:</strong> <span>Fine-tune your videos with precision editing features for professional results.</span></li>
+                <li><strong>API Integration:</strong> <span>Integrate Crayo.ai with your existing workflows and platforms for enhanced automation.</span></li>
             </ul>
         </section>
 
